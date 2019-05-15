@@ -32,7 +32,7 @@ app.use(root_route.router);
         );
 
     } catch (e) {
-        console.log("Error occured while connecting to datasource. Server not started");
+        console.log("Error occured while connecting to datasource. Server not started.");
     }
 
 })();
