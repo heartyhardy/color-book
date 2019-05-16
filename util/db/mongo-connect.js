@@ -1,5 +1,4 @@
-const mongodb = require('mongodb');
-const client = mongodb.MongoClient;
+const mongoose = require('mongoose');
 
 const options = {
     useNewUrlParser:true
@@ -9,13 +8,13 @@ let _db;
 
 const connect = async () => {
     try{
-        const res = await client.connect(
+        const res = await mongoose.connect(
             `mongodb+srv://default_user:123321@learningmongo-i-bk0ng.mongodb.net/colorbook?retryWrites=true`,
             options
         )
 
         console.log(`Now connected to MongoDB!`);
-        _db = res.db();
+        _db = mongoose.connection;
         return true;
 
     }catch(e){

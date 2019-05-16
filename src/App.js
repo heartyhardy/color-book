@@ -1,25 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Aux from './components/hoc/auxilary';
 
 function App() {
   return (
-    <div className="App">
+    <Aux
+      className="App"
+    >
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <div
+          className="App-title"
         >
-          Learn React
-        </a>
+          <span
+            className="App-icon"
+            role="img"
+            aria-label="color palette"
+          >
+            <i className="fas fa-palette"></i>
+          </span>
+
+          <h1
+            className="App-heading"
+          >
+            COLOR BOOK
+          </h1>
+        </div>
+
+        <div
+          className="App-subtitle"
+        >
+          <p>
+            Color book lets you save your favourite colors into a universal color library!
+          </p>
+
+        </div>
+
+        <div
+          className="App-scroll-hint"
+        >
+          <i className="fas fa-angle-double-down"></i>
+        </div>
+
       </header>
-    </div>
+
+    </Aux>
   );
 }
 

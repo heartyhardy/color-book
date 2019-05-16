@@ -25,6 +25,8 @@ app.use(root_route.router);
 // CONNECT TO DB AND START SERVER
 (async () => {
     try {
+        console.log('Connecting to datastore...');
+        
         const res = await db.connect();
 
         app.listen(PORT, () =>
