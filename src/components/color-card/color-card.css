@@ -1,0 +1,95 @@
+.color-card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* ColorSlot size * no of slots per row + padding *2 + margin *2 */
+    width: calc(6rem + 3rem + 1rem);
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, #535e6d, #282936);
+    border-top: .5rem solid azure;
+    box-shadow: 0 .15rem .25rem #2b1404;
+    border-radius: 1rem .15rem .15rem .15rem;
+}
+
+.color-card-slots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+}
+
+.color-card-funcs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .75rem;
+    color: #e6e6fa94;
+    margin-top: 1rem;
+}
+
+.color-function {
+    padding: .5rem;
+}
+
+.color-owner p {
+    display: inline-block;
+    max-width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+    font-size: .65rem;
+    color: slategray;
+    user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .color-card-main {
+        width: 90%;
+        margin: .5rem;
+        padding: .5rem;
+        padding-top: 1rem;
+        justify-self: center;
+        border-top: .45rem solid #e6e6fa94;
+        background-image: linear-gradient(to bottom, #44465a, #282936);
+    }
+    .color-card-slots {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 2rem);
+        grid-template-rows: 1fr;
+        grid-gap: .5rem;
+        justify-content: center;
+    }
+    .color-owner p {
+        max-width: 20ch;
+        padding-right: .5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .color-card-main {
+        width: 90%;
+        margin: .5rem;
+        padding: .5rem;
+        padding-top: 1rem;
+        justify-self: center;
+        border-top: .45rem solid #e6e6fa94;
+        background-image: linear-gradient(to bottom, #44465a, #282936);
+    }
+    .color-card-slots {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 1.5rem);
+        grid-template-rows: 1fr;
+        grid-gap: .4rem;
+        justify-content: center;
+    }
+    .color-owner p {
+        max-width: 20ch;
+        padding-right: .5rem;
+    }
+}

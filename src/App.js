@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Aux from './components/hoc/auxilary';
+import Colors from './components/colors/colors';
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
         </div>
 
       </header>
+
+      <Colors />
 
     </Aux>
   );

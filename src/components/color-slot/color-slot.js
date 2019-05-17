@@ -7,7 +7,7 @@ const ColorSlot = props => (
     <Aux
         className="color-slot-main"
     >
-
+        
     </Aux>
 )
 
