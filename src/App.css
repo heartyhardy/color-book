@@ -18,7 +18,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom-style: solid;
+  border-bottom-width: .15rem;
+  border-top-style: solid;
+  border-top-width: .15rem;
   background-image: linear-gradient(to bottom, #343f4e, #1e2036);
+  border-image: 
+  linear-gradient(to left, #1e2036, salmon, #1e2036 ) 1 round;
 }
 
 .App-title{
